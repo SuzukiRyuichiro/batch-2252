@@ -37,6 +37,12 @@ def scrape_album(url)
 end
 
 print 'Getting the most collected vinyls'
+3.times do
+  print '.'
+  sleep(0.5)
+end
+
+puts ''
 
 urls = fetch_master_urls
 
@@ -46,6 +52,7 @@ puts 'Getting more detailed info'
 
 urls.each do |url|
   puts "fetching #{url}"
+  sleep(0.2)
   data << scrape_album(url)
 end
 
