@@ -33,7 +33,7 @@ describe '#fetch_album_details' do
 
     expect(actual).to be_a(Hash)
   end
-  it 'scrapes and returns detail info of the album' do
+  it 'scrapes and returns detailed info of the album' do
     expected = {
       tracks: ['Come Together', 'Something', "Maxwell's Silver Hammer", 'Oh! Darling', "Octopus's Garden",
                "I Want You (She's So Heavy)", 'Here Comes The Sun', 'Because', 'You Never Give Me Your Money',

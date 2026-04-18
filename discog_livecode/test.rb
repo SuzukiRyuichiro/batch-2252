@@ -6,7 +6,7 @@ def fetch_album_details(url)
   doc = Nokogiri::HTML.parse(html)
 
   # TODO: figure out the CSS selector that gets the String, Array or Integer from the page
-  tracks = doc.search('.REPLACE_THIS_WITH_YOUR_SELECTOR') # Feel free to chain more methods (i.e. text.strip, to_i, map) to format the info into the desired shape
+  tracks = doc.search('.trackTitleNoArtist_VUgUr span')
   genres = doc.search('.REPLACE_THIS_WITH_YOUR_SELECTOR')
   title = doc.search('.REPLACE_THIS_WITH_YOUR_SELECTOR')
   year = doc.search('.REPLACE_THIS_WITH_YOUR_SELECTOR')
