@@ -18,4 +18,3 @@ sammy.invite_to_class(scooter)
 sammy.invite_to_class(antonio)
 
 pp sammy
-
