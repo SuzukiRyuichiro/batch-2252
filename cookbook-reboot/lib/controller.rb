@@ -18,6 +18,21 @@ class Controller
   end
 
   def list
+    display_recipe_list
+  end
+
+  def remove
+    # display the recipes to the user
+    display_recipe_list
+    # ask the user for a number to delete
+    index = @view.ask_for_index
+    # ask the cookbook to destroy the said recipe
+    @cookbook.destroy(index)
+  end
+
+  private
+
+  def display_recipe_list
     # ask the cookbook to get all the recipe instances
     recipes = @cookbook.all
     # ask the view to display them nicely

@@ -10,4 +10,8 @@ class Cookbook
   def all
     @recipes
   end
+
+  def destroy(index)
+    @recipes.delete_at(index)
+  end
 end
