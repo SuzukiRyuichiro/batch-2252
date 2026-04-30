@@ -1,1 +1,6 @@
-# TODO: Define your View class here, to display elements to the user and ask them for their input
+class View
+  def ask_for(thing)
+    puts "What is the #{thing} for the recipe?"
+    gets.chomp
+  end
+end
