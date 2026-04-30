@@ -16,4 +16,11 @@ class Controller
     # put the recipe into the cookbook (cookbook aka repo)
     @cookbook.create(recipe)
   end
+
+  def list
+    # ask the cookbook to get all the recipe instances
+    recipes = @cookbook.all
+    # ask the view to display them nicely
+    @view.display_list(recipes)
+  end
 end

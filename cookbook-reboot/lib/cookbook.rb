@@ -6,4 +6,8 @@ class Cookbook
   def create(recipe) # expects Recipe instance
     @recipes << recipe
   end
+
+  def all
+    @recipes
+  end
 end
