@@ -57,7 +57,3 @@ class MealRepository
     end
   end
 end
-
-meals_csv_file_path = File.join(__dir__, '../../data/meals.csv')
-meal_repository = MealRepository.new(meals_csv_file_path)
-pp meal_repository

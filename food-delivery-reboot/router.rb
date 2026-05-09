@@ -1,1 +1,46 @@
-# TODO: implement the router of your app.
+class Router
+  def initialize(meals_controller)
+    @meals_controller = meals_controller
+    @running    = true
+  end
+
+  def run
+    puts "🐈‍⬛ Welcome to Kiki's delivery service 🧙‍♀️"
+    puts "           --           "
+
+    while @running
+      display_tasks
+      action = gets.chomp.to_i
+      print `clear`
+      route_action(action)
+    end
+  end
+
+  private
+
+  def route_action(action)
+    case action
+    when 1 then @meals_controller.add
+    when 2 then @meals_controller.list
+    when 3 then puts "TODO"
+    when 4 then puts "TODO"
+    when 9 then stop
+    else
+      puts "Please press 1, 2, 3, 4 or 9"
+    end
+  end
+
+  def stop
+    @running = false
+  end
+
+  def display_tasks
+    puts ""
+    puts "What do you want to do next?"
+    puts "1 - Add a meal"
+    puts "2 - List all meals"
+    puts "3 - Add a customer"
+    puts "4 - List all customers"
+    puts "9 - Quit"
+  end
+end
