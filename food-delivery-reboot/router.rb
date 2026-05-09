@@ -1,7 +1,7 @@
 class Router
   def initialize(meals_controller)
     @meals_controller = meals_controller
-    @running    = true
+    @running = true
   end
 
   def run

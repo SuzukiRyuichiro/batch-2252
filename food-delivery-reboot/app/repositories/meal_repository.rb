@@ -17,7 +17,8 @@ class MealRepository
     @meals
   end
 
-  def create(meal) # expects a Meal instance
+  # expects a Meal instance
+  def create(meal)
     # assign the next id to the meal
     meal.id = @next_id
     # put the meal into @meals array

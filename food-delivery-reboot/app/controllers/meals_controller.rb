@@ -17,4 +17,11 @@ class MealsController
     # ask the repository to create the meal (repo)
     @meal_repository.create(meal)
   end
+
+  def list
+    # get all the meals from the repository
+    meals = @meal_repository.all
+    # display them in order (views)
+    @view.display_list(meals)
+  end
 end
