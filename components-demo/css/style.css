@@ -3,6 +3,10 @@
 
 /* --- Components design --- */
 @import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
 /* TODO: import new components */
 
 /* --- Fonts & colors --- */
@@ -10,12 +14,31 @@ body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   padding-bottom: 200px;
   margin: 0;
-  background-color: rgb(240,240,240);
+  background-color: rgb(240, 240, 240);
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-family: "Poppins", "sans-serif";
 }
 
 .text-center {
   text-align: center;
+}
+
+.flex {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-list {
+  justify-content: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
