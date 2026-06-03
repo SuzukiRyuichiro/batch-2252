@@ -1,0 +1,28 @@
+.spoiler-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.spoiler-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #797979;
+  transition: opacity 0.2s ease;
+}
+
+/* revealed state */
+.spoiler-text.revealed::after {
+  opacity: 0;
+  pointer-events: none;
+}
+
+code {
+  font-size: 18px !important;
+  color: #fff !important;
+  background-color: #212529;
+  padding: 16px;
+  border-radius: 5px;
+  display: block;
+}

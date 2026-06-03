@@ -1,0 +1,19 @@
+Team BANANA
+1 12 Kenji
+- Ryota
+- Glaucia
+- Taco
+- Glen
+6 7 Koji
+
+SCORE: 8
+
+Team KOJI
+1 7 Katherine
+- Carlos
+- Raphael
+- Jon
+- Steven (Chunyin Cheng)
+6 12 Steven S
+
+SCORE: 6

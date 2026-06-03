@@ -1,0 +1,572 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Bootstrap Classes</title>
+
+  <!-- Need to read device screen width (Bootstrap) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap & Fontawesome CSS only! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-body-secondary">
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">
+      <i class="fa-brands fa-bootstrap text-primary"></i>
+      Bootstrap Classes
+      <i class="fa-brands fa-bootstrap text-primary"></i>
+    </h1>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #1
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p>
+          <button type="button" class="btn btn-success">Book Now</button>
+        </p>
+        <pre>
+        <code>
+&lt;button type="button" class="btn <span class="spoiler-text" onclick="this.classList.toggle('revealed')">btn-success</span>"&gt;
+  Book Now
+&lt;/button&gt;
+      </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #2
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p>
+          <button type="button" class="btn btn-success btn-lg">
+            Book Now
+          </button>
+        </p>
+        <pre>
+        <code>
+&lt;button type="button" class="btn btn-success <span class="spoiler-text" onclick="this.classList.toggle('revealed')">btn-lg</span>"&gt;
+  Book Now
+&lt;/button&gt;
+      </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #3
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p class="bg-black text-white p-4">Not this one!</p>
+        <p class="bg-dark text-white p-4">This one!</p>
+        <pre>
+        <code>
+&lt;p class="<span class="spoiler-text" onclick="this.classList.toggle('revealed')">bg-dark</span> text-white p-4"&gt;
+  This one!
+&lt;/p&gt;
+      </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #4
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <h1 class="ps-4 border-5 border-start border-end my-3">
+          Hello World!
+        </h1>
+        <pre>
+        <code>
+&lt;h1 class="ps-4 border-5 <span class="spoiler-text" onclick="this.classList.toggle('revealed')">border-start border-end</span> my-3"&gt;
+  Hello World!
+&lt;/h1&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #5
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p class="bg-dark text-white text-center p-4 rounded-end">
+          Hey look at me!
+        </p>
+        <pre>
+        <code>
+&lt;p class="bg-dark text-white text-center p-4 <span class="spoiler-text" onclick="this.classList.toggle('revealed')">rounded-end</span>"&gt;
+  Hey look at me!
+&lt;/p&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #6
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-flex justify-content-between">
+          <p>Item 1</p>
+          <p>Item 2</p>
+          <p>Item 3</p>
+        </div>
+        <pre>
+        <code>
+&lt;div class="d-flex <span class="spoiler-text" onclick="this.classList.toggle('revealed')">justify-content-between</span>"&gt;
+  &lt;p&gt;Item 1&lt;/p&gt;
+  &lt;p&gt;Item 2&lt;/p&gt;
+  &lt;p&gt;Item 3&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #7
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-flex justify-content-between">
+          <p>Item 1</p>
+          <p class="bg-info text-center flex-grow-1">I'm big</p>
+          <p>Item 3</p>
+        </div>
+        <pre>
+        <code>
+&lt;div class="d-flex justify-content-between"&gt;
+  &lt;p&gt;Item 1&lt;/p&gt;
+  &lt;p class="bg-info text-center <span class="spoiler-text" onclick="this.classList.toggle('revealed')">flex-grow-1</span>"&gt;I'm big&lt;/p&gt;
+  &lt;p&gt;Item 3&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #8
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="bg-primary text-white p-4">Not this one!</div>
+        <div class="bg-primary text-white p-4 opacity-75">Not this one!</div>
+        <div class="bg-primary text-white p-4 opacity-50">This one!</div>
+        <pre>
+        <code>
+&lt;div class="bg-primary text-white p-4 <span class="spoiler-text" onclick="this.classList.toggle('revealed')">opacity-50</span>"&gt;
+  This one!
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #9
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p class="mb-0 pt-2">This is the original:</p>
+        <img src="images/flat.jpg" class="w-100" />
+        <p class="mb-0 pt-2">This is the modified:</p>
+        <div style="height: 300px">
+          <img src="images/flat.jpg" alt="" style="width: 300px" class="h-100 object-fit-cover" />
+        </div>
+        <pre>
+        <code>
+&lt;div style="height: 300px;"&gt;
+  &lt;img src="images/flat.jpg" alt="" style="width: 300px;" class="h-100 <span class="spoiler-text" onclick="this.classList.toggle('revealed')">object-fit-cover</span>" /&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #10
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-flex overflow-scroll">
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="" />
+        </div>
+        <pre>
+        <code>
+&lt;div class="d-flex <span class="spoiler-text" onclick="this.classList.toggle('revealed')">overflow-scroll</span>"&gt;
+  lots of images
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #11
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="p-3 mb-3 shadow">Hello World!</div>
+        <pre>
+        <code>
+&lt;div class="p-3 mb-3 <span class="spoiler-text" onclick="this.classList.toggle('revealed')">shadow</span>"&gt;
+  Hello World!
+&lt;/div&gt;
+        </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #12
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="bg-info mb-3 p-5 position-relative">
+          <span class="text-white position-absolute top-0 end-0">Hello World!</span>
+        </div>
+        <pre>
+          <code>
+&lt;div class="bg-info mb-3 p-5 position-relative"&gt;
+  &lt;span class="text-white <span class="spoiler-text" onclick="this.classList.toggle('revealed')">position-absolute top-0 end-0</span>"&gt;
+    Hello World!
+  &lt;/span&gt;
+&lt;/div&gt;
+  </code>
+        </pre>
+      </div>
+    </div>
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #13
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <span class="badge rounded-pill bg-success">New</span>
+        <pre>
+        <code>
+&lt;span class="badge <span class="spoiler-text" onclick="this.classList.toggle('revealed')">rounded-pill</span> bg-success"&gt;
+  New
+&lt;/span&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #14
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <img src="images/logo.png" alt="" class="rounded-circle w-25" />
+        <pre>
+        <code>
+&lt;img src="images/logo.png" alt="" class="<span class="spoiler-text" onclick="this.classList.toggle('revealed')">rounded-circle</span> w-25" /&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #15
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="alert alert-warning" role="alert">
+          Watch out!
+        </div>
+        <pre>
+        <code>
+&lt;div class="alert <span class="spoiler-text" onclick="this.classList.toggle('revealed')">alert-warning</span>" role="alert"&gt;
+  Watch out!
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #16
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <p class="fw-bold text-uppercase">breaking news</p>
+        <pre>
+        <code>
+&lt;p class="fw-bold <span class="spoiler-text" onclick="this.classList.toggle('revealed')">text-uppercase</span>"&gt;
+  breaking news
+&lt;/p&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #17
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="border border-3 border-primary p-3">
+          Primary box
+        </div>
+        <pre>
+        <code>
+&lt;div class="border <span class="spoiler-text" onclick="this.classList.toggle('revealed')">border-3 border-primary</span> p-3"&gt;
+  Primary box
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #18
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="bg-light py-5 text-center">Soft section</div>
+        <pre>
+        <code>
+&lt;div class="bg-light <span class="spoiler-text" onclick="this.classList.toggle('revealed')">py-5</span> text-center"&gt;
+  Soft section
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #19
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" alt="" class="me-2" />
+          <span>Aligned!</span>
+        </div>
+        <pre>
+        <code>
+&lt;div class="d-flex <span class="spoiler-text" onclick="this.classList.toggle('revealed')">align-items-center</span>"&gt;
+  &lt;img src="images/logo.png" alt="" class="me-2" /&gt;
+  &lt;span&gt;Aligned!&lt;/span&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #20
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-flex gap-3">
+          <div class="bg-secondary text-white p-2">A</div>
+          <div class="bg-secondary text-white p-2">B</div>
+          <div class="bg-secondary text-white p-2">C</div>
+        </div>
+        <pre>
+        <code>
+&lt;div class="d-flex <span class="spoiler-text" onclick="this.classList.toggle('revealed')">gap-3</span>"&gt;
+  &lt;div class="bg-secondary text-white p-2"&gt;A&lt;/div&gt;
+  &lt;div class="bg-secondary text-white p-2"&gt;B&lt;/div&gt;
+  &lt;div class="bg-secondary text-white p-2"&gt;C&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #21
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="w-50 mx-auto bg-info text-white p-3 text-center">
+          Half
+        </div>
+        <pre>
+        <code>
+&lt;div class="<span class="spoiler-text" onclick="this.classList.toggle('revealed')">w-50</span> mx-auto bg-info text-white p-3 text-center"&gt;
+  Half
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #22
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <ul class="list-group">
+          <li class="list-group-item">First</li>
+          <li class="list-group-item">Second</li>
+          <li class="list-group-item">Third</li>
+        </ul>
+        <pre>
+        <code>
+&lt;ul class="list-group"&gt;
+  &lt;li class="<span class="spoiler-text" onclick="this.classList.toggle('revealed')">list-group-item</span>"&gt;First&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;Second&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;Third&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #23
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-primary" type="button">First</button>
+          <button class="btn btn-outline-primary" type="button">Second</button>
+        </div>
+        <pre>
+        <code>
+&lt;div class="<span class="spoiler-text" onclick="this.classList.toggle('revealed')">d-grid</span> gap-2"&gt;
+  &lt;button class="btn btn-outline-primary" type="button"&gt;First&lt;/button&gt;
+  &lt;button class="btn btn-outline-primary" type="button"&gt;Second&lt;/button&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="example-container bg-white pt-4 px-4 pb-5 rounded-3 mb-5">
+      <h2 class="mb-3">
+        Example #24
+        <i class="fa-solid fa-eye" onclick="
+              this.parentElement.nextElementSibling.classList.toggle('d-none')
+            "></i>
+      </h2>
+      <div class="d-none">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oslo</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Paris</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre>
+        <code>
+&lt;table class="table <span class="spoiler-text" onclick="this.classList.toggle('revealed')">table-striped</span>"&gt;
+  ...
+&lt;/table&gt;
+        </code></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript library -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
