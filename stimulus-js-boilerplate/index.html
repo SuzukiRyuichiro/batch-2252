@@ -75,20 +75,24 @@
 
       <!-- Remove the `d-none` when you want to display the form -->
       <div class="row">
-        <div class="col-12 d-none">
-          <form class="row g-2 justify-content-center py-5">
+        <div class="col-12" data-controller="movie-search">
+          <form
+            class="row g-2 justify-content-center py-5"
+            data-action="submit->movie-search#search"
+          >
             <div class="col-4">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Find movie"
+                data-movie-search-target="input"
               />
             </div>
             <div class="col-1">
               <input type="submit" class="btn btn-primary" />
             </div>
           </form>
-          <ul class="row"></ul>
+          <ul class="row list-group" data-movie-search-target="list"></ul>
         </div>
       </div>
     </div>
