@@ -1,0 +1,3 @@
+[submodule "rails-watch-list/spec"]
+	path = rails-watch-list/spec
+	url = https://github.com/lewagon/fullstack-challenges-04-Rails-watch-list-specs.git
