@@ -4,4 +4,10 @@ class ListsController < ApplicationController
     @lists = List.all
     # Render them in the view
   end
+
+  def show
+    # Find the relevant list using ID
+    @list = List.find(params[:id])
+    # render the show page
+  end
 end
