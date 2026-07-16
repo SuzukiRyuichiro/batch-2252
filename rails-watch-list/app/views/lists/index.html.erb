@@ -2,6 +2,9 @@
 <ul>
   <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list) %></li>
+    <%= link_to list_path(list) do  %>
+      <%= image_tag list.movies.first&.poster_url || "https://picsum.photos/200", alt: "Photo", height: 200, width: 200 %>
+    <% end %>
   <% end %>
 </ul>
 <%= link_to "New Movie List", new_list_path %>
