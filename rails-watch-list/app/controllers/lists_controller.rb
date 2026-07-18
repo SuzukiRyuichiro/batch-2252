@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index]
   def index
     # Get all of the movie lists in the DB
     @lists = List.all

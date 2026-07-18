@@ -8,3 +8,9 @@
   <% end %>
 </ul>
 <%= link_to "New Movie List", new_list_path %>
+<h1>
+  <%= user_signed_in? ? "Hey I'm in!!!" : "Hey I got kicked out" %>
+  <% if  user_signed_in? %>
+    <%= current_user.email %>
+  <% end %>
+</h1>
