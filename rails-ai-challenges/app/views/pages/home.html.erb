@@ -1,1 +1,10 @@
 <%= link_to "Go to challenges",  challenges_path %>
+<hr>
+<h2>Turbo Stream demo</h2>
+<div id="demo_messages">
+  <p><em>Nothing yet, submit the form below!</em></p>
+</div>
+<%= form_with url: demo_message_path do |form| %>
+  <%= form.text_field :text, placeholder: "Say something..." %>
+  <%= form.submit "Send" %>
+<% end %>
